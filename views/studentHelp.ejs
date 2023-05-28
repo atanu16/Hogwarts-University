@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Help</title>
+
+  <!--Bootstrap-->
+
+    <link rel="stylesheet" href="css/style10.css">
+    <link rel="stylesheet" href="css/pq.css">
+    
+   
+
+  <!--boxicons-->
+<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+<!-- Front awsome -->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <!--Icon-->
+  <link rel="icon" href="images/Web.ico">
+
+
+  </head>
+
+
+
+
+  <body onload="myfung()">
+
+    <div id="Loading">
+
+    </div>
+<!-- nav start -->
+
+<nav>
+  <div class="sidebar-top" style="
+  margin-bottom: 20px;
+">
+    <span class="shrink-btn">
+      <i class='bx bx-chevron-left'></i>
+    </span>
+    <img src="./images/Logo.png" class="logo" alt="">
+    <h3 class="hide" style="padding-left: 0px;margin-left: 38px;" >HUMS</h3>
+  </div>
+
+
+
+  <div class="sidebar-links">
+    <ul>
+      <div class="#"></div>
+      <li>
+        <a href="Dashboard-student" >
+          <div class="icon">
+            <i class='bx bx-tachometer'></i>
+            <i class='bx bxs-tachometer'></i>
+          </div>
+          <span class="link hide">Dashboard</span>
+        </a>
+      </li>
+      <li>
+        <a href="/Profile-student" >
+          <div class="icon">
+            <i class='bx bx-folder'></i>
+            <i class='bx bxs-folder'></i>
+          </div>
+          <span class="link hide">Profile</span>
+        </a>
+      </li>
+      <li>
+        <a href="Result-student" >
+          <div class="icon">
+            <i class='bx bx-bar-chart-square'></i>
+            <i class='bx bxs-bar-chart-square'></i>
+          </div>
+          <span class="link hide">Result</span>
+        </a>
+      </li>
+      <li>
+        <a href="Timetable-student" >
+          <div class="icon">
+            <i class='bx bx-notepad'></i>
+            <i class='bx bxs-notepad'></i>
+          </div>
+          <span class="link hide">Time Table</span>
+        </a>
+      </li>
+
+
+    <h4 class="hide">Student Care</h4>
+
+    <ul>
+
+      <li>
+        <a href="Help-student"  class="active">
+          <div class="icon">
+            <i class='bx bx-help-circle'></i>
+            <i class='bx bxs-help-circle'></i>
+          </div>
+          <span class="link hide">Help</span>
+        </a>
+      </li>
+      <li>
+        <a href="Feedback-student" data-active="5">
+          <div class="icon">
+            <div class="icon">
+              <i class='bx bx-message-square-detail'></i>
+              <i class='bx bxs-message-square-detail'></i>
+            </div>
+          </div>
+          <span class="link hide">Feedback</span>
+        </a>
+      </li>
+
+
+  <div class="sidebar-footer">
+    <a href="#" class="account tooltip-element">
+      <i class='bx bx-user'></i>
+    </a>
+    <div class="admin-user tooltip-element" style="
+    margin-top: 80px;
+">
+      <div class="admin-profile hide">
+        <img src="./images/ppl.png" alt="">
+        <div class="admin-info">
+          <h3><%=Student.name%></h3>
+          
+          <h5>Student</h5>
+        </div>
+      </div>
+      <a href="/logout" class="log-out">
+        <i class='bx bx-log-out'></i>
+      </a>
+    </div>
+  </div>
+</nav>
+<!--Main Start-->
+<main>
+<h1>Help Center</h1>
+
+
+
+<div>
+  <section class="ftco-section" style="
+  padding-bottom: 40px;
+  padding-top: 20px;
+">
+		<div class="container">
+
+			<div class="row justify-content-center">
+				<div class="col-lg-10 col-md-12">
+					<div class="wrapper">
+						<div class="row no-gutters">
+							<div class="col-md-7 d-flex align-items-stretch">
+								<div class="contact-wrap w-100 p-md-5 p-4">
+									<h3 class="mb-4">Help</h3>
+									<div id="form-message-warning" class="mb-4"></div> 
+				      		<div id="form-message-success" class="mb-4">
+				            Your message was sent, thank you!
+				      		</div>
+									<form action="mailto:reportmanagement62@gmail.com" method="post" enctype="text/plain">
+										<div class="row">
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="text" class="form-control" name="name" id="name" placeholder="Name">
+												</div>
+											</div>
+											<div class="col-md-6"> 
+												<div class="form-group">
+													
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="email" class="form-control" name="email" id="email" placeholder="Email">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<textarea name="message" class="form-control" id="message" cols="30" rows="7" placeholder="Message"></textarea>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="submit" value="Send Message" class="btn btn-outline-dark">
+													<div class="submitting"></div>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="col-md-5 d-flex align-items-stretch">
+								<div class="info-wrap bg-primary w-100 p-lg-5 p-4">
+									<h3 class="mb-4 mt-md-4">Contact us</h3>
+				        	<div class="dbox w-100 d-flex align-items-start">
+				        		<div class="icon d-flex align-items-center justify-content-center">
+				        			<span class="fa fa-map-marker"></span>
+				        		</div>
+				        		<div class="text pl-3">
+					            <p><span>Address:</span> Hogwarts Castle, Highlands Scotland, Great Britain</p>
+					          </div>
+				          </div>
+				        	<div class="dbox w-100 d-flex align-items-center">
+				        		<div class="icon d-flex align-items-center justify-content-center">
+				        			<span class="fa fa-phone"></span>
+				        		</div>
+				        		<div class="text pl-3">
+					            <p><span>Phone:</span> <a href="tel://8016976125">+918016976125</a></p>
+					          </div>
+				          </div>
+				        	<div class="dbox w-100 d-flex align-items-center">
+				        		<div class="icon d-flex align-items-center justify-content-center">
+				        			<span class="fa fa-paper-plane"></span>
+				        		</div>
+				        		<div class="text pl-3">
+					            <p><span>Email:</span> <a href="mailto:reportmanagement62@gmail.com">reportmanagement62</a></p>
+					          </div>
+				          </div>
+				        
+			          </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+
+
+
+  <!--footer-->
+
+  <p class="copyright">
+    &copy; 2022 - <span>Hogwarts University</span> All Rights Reserved.
+  </p>
+</main>
+
+  <script src="js/dashboard.js"></script>
+
+	<script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+
+    var preloader = document.getElementById("Loading");
+
+    function myfung(){
+      preloader.style.display = 'none';
+    };
+    </script>
+
+
+  </body>
+</html>
