@@ -1,5 +1,5 @@
 const express = require('express')
-const controller = require('../controller/Controller.js')
+const controller = require('../controller/controller.js')
 const login = require('../controller/login.js')
 const session = require('express-session');
 const passport = require('passport')
