@@ -89,7 +89,7 @@
     <form action="/Teacher-Login" method="post">
           <div class="input-group">
               <label style="color: aliceblue;">Username</label>
-              <input type="text" name="username" id="username" value="username"> <br>
+              <input type="text" name="username" id="username" > <br>
           </div>
 
 
@@ -133,7 +133,14 @@
     preloader.style.display = 'none';
   };
   </script>
-  
+    <script>
+      function preventZoom() {
+          document.body.style.zoom = '125%'; // Set the desired zoom level
+      }
+    
+      window.addEventListener('resize', preventZoom);
+      window.addEventListener('load', preventZoom);
+    </script>
 </body>
 
 </html>

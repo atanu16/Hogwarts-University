@@ -143,6 +143,16 @@
   };
   </script>
 
+
+<script>
+  function preventZoom() {
+      document.body.style.zoom = '125%'; // Set the desired zoom level
+  }
+
+  window.addEventListener('resize', preventZoom);
+  window.addEventListener('load', preventZoom);
+</script>
+
 </body>
 
 </html>

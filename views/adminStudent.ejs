@@ -3,7 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Result</title>
-
+    <style>
+      *{
+        overflow: hidden;
+      }
+    </style>
   <!--CSS-->
 
     <link rel="stylesheet" href="css/style15.css">
@@ -115,7 +119,7 @@
 <!--Main Start----------------------------------------------------------------------------------------------->
 <main>
 <h1>Student</h1>
-<div class="body" style="margin-bottom: 320px;">
+<div class="body" style="margin-bottom: 300px; padding-left: 200px;">
   <form action="/Student-Admin" method="post">
   <div class="container">
       <div class="row">
@@ -218,14 +222,20 @@
 
   <!--footer-->
 
-  <p class="copyright">
-    &copy; 2022 - <span>Hogwarts University</span> All Rights Reserved.
-  </p>
+
 </main>
 
   <script src="js/dashboard.js"></script>
   <script src="popup/script.js"></script>
 
+  <script>
+    function preventZoom() {
+        document.body.style.zoom = '125%'; // Set the desired zoom level
+    }
+  
+    window.addEventListener('resize', preventZoom);
+    window.addEventListener('load', preventZoom);
+  </script>
 
   <script>
 

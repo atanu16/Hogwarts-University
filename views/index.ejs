@@ -291,6 +291,14 @@
     </footer>
 
     <script>
+      function preventZoom() {
+          document.body.style.zoom = '125%'; // Set the desired zoom level
+      }
+
+      window.addEventListener('resize', preventZoom);
+      window.addEventListener('load', preventZoom);
+  </script>
+    <script>
       // $(document).ready(function(){
       // 	$('div#loading').removeAttr('id');
       // });
@@ -303,5 +311,15 @@
         preloader.style.display = "none";
       }
     </script>
+
+
+<script>
+  function preventZoom() {
+      document.body.style.zoom = '100%'; // Set the desired zoom level
+  }
+
+  window.addEventListener('resize', preventZoom);
+  window.addEventListener('load', preventZoom);
+</script>
   </body>
 </html>

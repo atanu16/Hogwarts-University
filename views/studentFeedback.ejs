@@ -3,7 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Feedback</title>
-
+    <style>
+      *{
+        overflow: hidden;
+      }
+    </style>
   <!--Bootstrap-->
 
     <link rel="stylesheet" href="css/style9.css">
@@ -219,6 +223,13 @@ closeBtn.forEach(cBtn => {
     preloader.style.display = 'none';
   };
   </script>
-
+  <script>
+    function preventZoom() {
+        document.body.style.zoom = '125%'; // Set the desired zoom level
+    }
+  
+    window.addEventListener('resize', preventZoom);
+    window.addEventListener('load', preventZoom);
+  </script>
   </body>
 </html>

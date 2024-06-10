@@ -3,7 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Profile</title>
-
+    <style>
+      *{
+        overflow: hidden;
+      }
+    </style>
   <!--Bootstrap-->
 
     <link rel="stylesheet" href="css/style15.css">
@@ -240,9 +244,7 @@
 
   <!--footer-->
 
-  <p class="copyright">
-    &copy; 2022 - <span>Hogwarts University</span> All Rights Reserved.
-  </p>
+
 </main>
 
   <script src="js/dashboard.js"></script>
@@ -254,7 +256,14 @@
 
 
 
-
+  <script>
+    function preventZoom() {
+        document.body.style.zoom = '125%'; // Set the desired zoom level
+    }
+  
+    window.addEventListener('resize', preventZoom);
+    window.addEventListener('load', preventZoom);
+  </script>
 
 
   <script>
